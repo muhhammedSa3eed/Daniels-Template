@@ -14,6 +14,8 @@ Welcome to **Daniels-Template**, a sleek and modern web template designed for [i
 ## Overview
 Daniels-Template is a [describe briefly, e.g., "responsive HTML/CSS/JavaScript template"] built to help users quickly set up [specific use case]. It’s lightweight, easy to customize, and designed with modern web standards in mind.
 
+![Daniels-Template Screenshot](./images/screenshot.png)
+
 ## Features
 - Responsive design for mobile, tablet, and desktop
 - Clean and minimalistic UI
