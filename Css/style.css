@@ -1,0 +1,436 @@
+:root {
+  --heading-font: "Montserrat", sans-serif;
+  --main-font: "Poppins", sans-serif;
+  --text-heading: #343434;
+  --transition: 0.6s;
+  --section-bg: #f7f7f7;
+}
+html {
+  scroll-padding-top: 62px;
+}
+/* * Utility Classes */
+.head-font {
+  font-family: var(--heading-font);
+}
+.isolate {
+  isolation: isolate;
+}
+.main-font {
+  font-family: var(--main-font);
+}
+.text-heading {
+  color: var(--heading-font);
+}
+.isolate {
+  isolation: isolate;
+}
+.op-black {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.op-gray {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.bg-title {
+  background-color: var(--section-bg);
+}
+.w-50px {
+  width: 50px;
+}
+.h-50px {
+  height: 50px;
+}
+.w-30px {
+  width: 30px;
+}
+.h-30px {
+  height: 30px;
+}
+.w-35px {
+  width: 35px;
+}
+.h-35px {
+  height: 35px;
+}
+.w-80px {
+  width: 80px;
+}
+.h-80px {
+  height: 80px;
+}
+.w-12px {
+  width: 12px !important;
+}
+.h-12px {
+  height: 12px !important;
+}
+.fs-12px {
+  font-size: 13px;
+}
+.fs-18px {
+  font-size: 18px;
+}
+.h-25px {
+  height: 25px;
+}
+.w-100px {
+  width: 100px;
+}
+.bg-bar {
+  background-color: #1c1c1c !important;
+}
+.inside-shadow {
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+}
+.fw-900 {
+  font-weight: 900;
+}
+.bottom-15px {
+  bottom: -15px;
+}
+.bg-section {
+  background-color: var(--section-bg);
+}
+.h-96 {
+  height: 96%;
+}
+.btn-dark:hover {
+  background-color: #fff !important;
+  color: #000;
+}
+.h-105 {
+  height: calc(100% + 20px);
+}
+.left-5px {
+  left: 5px !important ;
+  right: 5px !important;
+}
+.bg-white-50 {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../Images/dots.png");
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.container .navbar-nav .nav-link.active {
+  position: relative;
+}
+.container .navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+/*  ^^ Start Header */
+header {
+  background-image: url("../Images/bg.jpg");
+  background-position: 0% 0%;
+  background-size: cover;
+}
+header .overlay .container .content h2::after {
+  content: "";
+  animation: typing 10s infinite;
+  font-weight: 400;
+}
+/*  ^^ End Header */
+/*  * Start About */
+.about .row .image::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 80%;
+  height: 80%;
+  background-image: url("../Images/dots.png");
+  z-index: -1;
+}
+/*  * End About */
+/* & Start Services */
+.service-card i {
+  transition: background-color var(--transition), color var(--transition);
+}
+.service-card:hover i {
+  background: #000 !important;
+  color: #fff;
+}
+/* & End Services */
+/* ^ Start Portfolio */
+.portfolio .image {
+  border: none !important;
+  transition: border 0.5s;
+}
+.portfolio .image .overlay {
+  transition: opacity var(--transition), bottom var(--transition);
+}
+
+.portfolio .image:hover .overlay {
+  opacity: 1 !important;
+  bottom: 2% !important;
+}
+.portfolio .image .files-icon {
+  line-height: 7 !important;
+  transition: line-height var(--transition);
+}
+.portfolio .image:hover .files-icon {
+  line-height: 2 !important;
+}
+.portfolio .files-icon a i {
+  transition: background-color var(--transition), color var(--transition),
+    outline var(--transition);
+}
+.portfolio .files-icon a:hover i {
+  outline: 1px solid #000;
+  background-color: white !important;
+  color: #000 !important;
+}
+.nav-tabs {
+  border: none !important;
+}
+.nav-tabs .nav-link {
+  border: none !important;
+}
+.nav-tabs .nav-link.active {
+  position: relative;
+  border: none !important;
+}
+.nav-tabs .nav-link.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+/* ^ End Portfolio */
+/* * Start Teams */
+.team .team-card .image .layer{
+  width: calc(100% -16px) !important;
+  height: calc(100% -16px) !important;
+  bottom: 8px !important;
+  right: 8px !important;
+  top: 8px !important;
+  left: 8px !important;
+  transition: opacity var(--transition) , width var(--transition) , height var(--transition);
+}
+.team .team-card .image:hover .layer {
+  opacity: 1 !important;
+  width: calc(100% -16px) !important;
+  height: calc(100% -16px) !important;
+
+}
+.team .team-card .image .social-icons a i {
+  transition: background-color var(--transition) , color var(--transition);
+}
+.team .team-card .image .social-icons a:hover i {
+  outline: 1px solid #000;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+/* * End Teams */
+/* ! Start Contact */
+.contact .inner .icon {
+  transition: background-color var(--transition), color var(--transition);
+}
+.contact .inner:hover .icon {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+/* ! End Contact */
+/* & Animation */
+@keyframes typing {
+  0% {
+    content: " |";
+  }
+  1.6% {
+    content: " D|";
+  }
+  3.2% {
+    content: " De|";
+  }
+  4.8% {
+    content: " Des|";
+  }
+  6.4% {
+    content: " Desi|";
+  }
+  8% {
+    content: " Desig|";
+  }
+  9.6% {
+    content: " Design|";
+  }
+  11.2% {
+    content: " Designe|";
+  }
+  12.8% {
+    content: " Designer|";
+  }
+  14.4% {
+    content: " Designe|";
+  }
+  16% {
+    content: " Design|";
+  }
+  17.6% {
+    content: " Desig|";
+  }
+  19.2% {
+    content: " Desi|";
+  }
+  20.8% {
+    content: " Des|";
+  }
+  22.4% {
+    content: " De|";
+  }
+  24% {
+    content: " D|";
+  }
+  25.6% {
+    content: "|";
+  }
+  27.2% {
+    content: " L|";
+  }
+  28.8% {
+    content: " La|";
+  }
+  30.4% {
+    content: " Lar|";
+  }
+  32% {
+    content: " Larr|";
+  }
+  33.6% {
+    content: " Larry|";
+  }
+  35.2% {
+    content: " Larry |";
+  }
+  36.8% {
+    content: " Larry D|";
+  }
+  38.4% {
+    content: " Larry Da|";
+  }
+  40% {
+    content: " Larry Dan|";
+  }
+  41.6% {
+    content: " Larry Dani|";
+  }
+  43.2% {
+    content: " Larry Danie|";
+  }
+  44.8% {
+    content: " Larry Daniel|";
+  }
+  46.4% {
+    content: " Larry Daniels|";
+  }
+  48% {
+    content: " Larry Daniel|";
+  }
+  49.6% {
+    content: " Larry Danie|";
+  }
+  51.2% {
+    content: " Larry Dani|";
+  }
+  52.8% {
+    content: " Larry Dan|";
+  }
+  54.4% {
+    content: " Larry Da|";
+  }
+  56% {
+    content: " Larry D|";
+  }
+  57.6% {
+    content: " Larry |";
+  }
+  59.2% {
+    content: " Larry|";
+  }
+  60.8% {
+    content: " Larr|";
+  }
+  62.4% {
+    content: " Lar|";
+  }
+  64% {
+    content: " La|";
+  }
+  65.6% {
+    content: " L|";
+  }
+  67.2% {
+    content: "|";
+  }
+  68.8% {
+    content: " D|";
+  }
+  70.4% {
+    content: " De|";
+  }
+  72% {
+    content: " Dev|";
+  }
+  73.6% {
+    content: " Deve|";
+  }
+  75.2% {
+    content: " Devel|";
+  }
+  76.8% {
+    content: " Develo|";
+  }
+  78.4% {
+    content: " Develop|";
+  }
+  80% {
+    content: " Develope|";
+  }
+  81.6% {
+    content: " Developer|";
+  }
+  83.2% {
+    content: " Develope|";
+  }
+  84.8% {
+    content: " Develop|";
+  }
+  86.4% {
+    content: " Develo|";
+  }
+  88% {
+    content: " Devel|";
+  }
+  89.6% {
+    content: " Deve|";
+  }
+  91.2% {
+    content: " Dev|";
+  }
+  93.8% {
+    content: " De|";
+  }
+  97.4% {
+    content: " D|";
+  }
+  100% {
+    content: "|";
+  }
+}
